@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gerelt-Och Temuujin's AI engineering portfolio: large language models, NLP, reinforcement learning, computer vision, and model deployment." />
+  <meta name="author" content="Gerelt-Och Temuujin" />
+  <title>Gerelt-Och Temuujin | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#top" aria-label="Home">GT<span>.</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">☼</button>
+        <a class="button button-small" href="gerelt-och-temuujin-resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section container">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span> Open to research, internships &amp; part-time roles</div>
+        <p class="eyebrow">GERELT-OCH TEMUUJIN · AI ENGINEERING</p>
+        <h1>I build intelligent systems from <span>model architecture</span> to deployment.</h1>
+        <p class="hero-text">
+          I’m Gerelt-Och Temuujin, a Software Engineering student at Kookmin University focused on AI engineering and applied machine learning.
+          I build and evaluate systems across large language models, natural language processing, reinforcement learning, and computer vision,
+          with particular interest in reliable training, optimisation, and deployment.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">View projects</a>
+          <a class="button button-ghost" href="gerelt-och-temuujin-resume.pdf" target="_blank" rel="noopener" download>Download résumé</a>
+        </div>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/temuujin-gerelt-och-69b455334/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:temka4705@gmail.com">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" aria-label="Technical profile summary">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+          <p>temuujin@portfolio:~</p>
+        </div>
+        <div class="terminal-body">
+          <p><span class="terminal-prompt">$</span> whoami</p>
+          <p class="terminal-output">AI engineering student · researcher-in-training</p>
+          <p><span class="terminal-prompt">$</span> cat focus.txt</p>
+          <p class="terminal-output">LLMs · NLP · RL · Computer Vision</p>
+          <p><span class="terminal-prompt">$</span> ./current_stack</p>
+          <div class="stack-line">
+            <span>PyTorch</span><span>Transformers</span><span>LoRA</span><span>Modal</span>
+          </div>
+          <p><span class="terminal-prompt">$</span> status</p>
+          <p class="terminal-output accent">open_to = research | internships | part-time</p>
+        </div>
+        <div class="metric-grid">
+          <div><strong>8B</strong><span>Largest model tuned</span></div>
+          <div><strong>4-bit</strong><span>Quantised inference</span></div>
+          <div><strong>5+</strong><span>RL algorithms built</span></div>
+          <div><strong>4.18</strong><span>Current GPA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects with actual engineering behind them.</h2>
+        <p>Three projects that best represent how I think, build, debug, and improve AI systems.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-visual transformer-visual">
+            <div class="node n1">Input</div>
+            <div class="node n2">Embed</div>
+            <div class="node n3">Attention</div>
+            <div class="node n4">MLP</div>
+            <div class="node n5">Logits</div>
+            <svg viewBox="0 0 600 260" aria-hidden="true">
+              <path d="M95 130 C150 130, 155 70, 220 70" />
+              <path d="M285 70 C350 70, 350 190, 415 190" />
+              <path d="M285 70 C350 70, 350 70, 415 70" />
+              <path d="M480 130 C520 130, 525 130, 560 130" />
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>01</span><span>LLM ARCHITECTURE</span></div>
+            <h3>GPT-Style Language Model Reconstruction</h3>
+            <p>Implemented a decoder-only transformer to understand causal attention, residual pathways, token generation, and training behaviour from first principles.</p>
+            <div class="project-stats">
+              <div><strong>[XXM]</strong><span>Parameters</span></div>
+              <div><strong>[X.XX]</strong><span>Validation loss</span></div>
+              <div><strong>[XK/s]</strong><span>Tokens / sec</span></div>
+            </div>
+            <div class="tags"><span>PyTorch</span><span>Transformers</span><span>CUDA</span><span>W&B</span></div>
+            <a class="text-link" href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-meta"><span>02</span><span>LLM FINE-TUNING</span></div>
+            <h3>Llama 3.1 8B LoRA Pipeline</h3>
+            <p>Fine-tuned a 4-bit quantised Llama model using LoRA adapters and deployed GPU-backed inference with Modal.</p>
+            <div class="project-stats compact">
+              <div><strong>8B</strong><span>Base model</span></div>
+              <div><strong>4-bit</strong><span>NF4</span></div>
+              <div><strong>r=32</strong><span>LoRA rank</span></div>
+            </div>
+            <div class="tags"><span>PEFT</span><span>BitsAndBytes</span><span>Modal</span><span>Hugging Face</span></div>
+            <a class="text-link" href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-meta"><span>03</span><span>REINFORCEMENT LEARNING</span></div>
+            <h3>PPO Agent for Super Mario Bros</h3>
+            <p>Built a PPO training system with parallel environments, stage-specific evaluation, reward shaping, and extensive failure analysis under limited compute.</p>
+            <div class="project-stats compact">
+              <div><strong>35</strong><span>Updates to clear 6-4</span></div>
+              <div><strong>32</strong><span>Parallel envs tested</span></div>
+              <div><strong>256</strong><span>Rollout steps</span></div>
+            </div>
+            <div class="tags"><span>PPO</span><span>Gymnasium</span><span>PyTorch</span><span>Colab</span></div>
+            <a class="text-link" href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ABOUT</p>
+          <h2>Technical curiosity, applied with discipline.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>I’m Gerelt-Och Temuujin, a second-year Software Engineering student at Kookmin University with a current GPA of 4.18. I have hands-on experience across NLP, reinforcement learning, computer vision, and generative AI, including GPT-style architectures, LoRA fine-tuning, retrieval systems, RL agents, and cloud GPU deployment.</p>
+          <p>I approach difficult problems by breaking them into measurable components, testing assumptions, and analysing failure modes. Whether a policy is trapped in a local optimum or a retrieval pipeline is returning irrelevant context, I care about reproducibility, clean experiments, and engineering decisions that survive contact with reality.</p>
+          <div class="principles">
+            <div><span>01</span><strong>Understand the system</strong><p>Know what the abstraction hides before depending on it.</p></div>
+            <div><span>02</span><strong>Measure everything</strong><p>Loss curves, latency, throughput, memory, and failure cases.</p></div>
+            <div><span>03</span><strong>Build end to end</strong><p>From architecture and training to deployment and evaluation.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">TECHNICAL SKILLS</p>
+        <h2>A focused stack, not a logo graveyard.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span>01</span><h3>Languages</h3><p>Python · C++ · Java · SQL · JavaScript · HTML/CSS</p></article>
+        <article class="skill-card reveal"><span>02</span><h3>LLMs & NLP</h3><p>Transformers · LoRA · PEFT · Quantisation · RAG · Embeddings · Tokenisation</p></article>
+        <article class="skill-card reveal"><span>03</span><h3>ML & Vision</h3><p>PyTorch · TensorFlow · Scikit-learn · EfficientNet · ViT · Transfer Learning</p></article>
+        <article class="skill-card reveal"><span>04</span><h3>Reinforcement Learning</h3><p>DQN · PPO · A3C · Actor-Critic · Reward Shaping · Vector Environments</p></article>
+        <article class="skill-card reveal"><span>05</span><h3>Infrastructure</h3><p>Modal · CUDA · Google Colab · W&B · Chroma · FAISS · REST APIs</p></article>
+        <article class="skill-card reveal"><span>06</span><h3>Developer Tools</h3><p>Git · GitHub · Linux · Jupyter · Cursor · Conda · Playwright</p></article>
+      </div>
+    </section>
+
+
+    <section class="section background-section" id="background">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">BACKGROUND</p>
+          <h2>Education, languages, and work beyond the code.</h2>
+          <p>A compact view of the academic and community experience supporting my technical work.</p>
+        </div>
+
+        <div class="background-grid">
+          <article class="background-card background-card-wide reveal">
+            <div class="background-card-top">
+              <span>EDUCATION</span><span>2024 — PRESENT</span>
+            </div>
+            <h3>Kookmin University</h3>
+            <p>Software Engineering · Second year, second semester</p>
+            <div class="credential-metrics">
+              <div><strong>4.18</strong><span>Current GPA</span></div>
+              <div><strong>AI / ML</strong><span>Primary academic focus</span></div>
+            </div>
+          </article>
+
+          <article class="background-card reveal">
+            <div class="background-card-top"><span>LANGUAGES</span></div>
+            <h3>Multilingual communication</h3>
+            <ul class="clean-list">
+              <li><span>Mongolian</span><strong>Native</strong></li>
+              <li><span>Korean</span><strong>TOPIK 5</strong></li>
+              <li><span>English</span><strong>B2</strong></li>
+            </ul>
+          </article>
+
+          <article class="background-card reveal">
+            <div class="background-card-top"><span>MENTORING &amp; SERVICE</span></div>
+            <h3>Community involvement</h3>
+            <p>Mentored a government scholarship student from March to December 2024, supporting study strategy and academic progress.</p>
+            <p>Completed 24+ hours with the “Orange People” street-cleaning initiative in Seoul.</p>
+          </article>
+
+          <article class="background-card background-card-wide reveal">
+            <div class="background-card-top"><span>COURSEWORK &amp; CERTIFICATES</span></div>
+            <h3>Continued technical development</h3>
+            <div class="certificate-tags">
+              <span>Machine Learning A–Z</span>
+              <span>Deep Learning</span>
+              <span>LLM Engineering &amp; Agentic AI</span>
+              <span>Computer Vision Fundamentals</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container archive-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OTHER WORK</p>
+        <h2>Additional applied AI projects.</h2>
+      </div>
+      <div class="archive-list">
+        <a href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer" class="archive-row reveal"><span>AI Price Prediction &amp; Deal Detection</span><span>Scraping · ML ensembles · Automated alerts</span><span>↗</span></a>
+        <a href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer" class="archive-row reveal"><span>Food Classification Model</span><span>PyTorch · CNN · Data augmentation</span><span>↗</span></a>
+        <a href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer" class="archive-row reveal"><span>Hand-Tracking Drawing System</span><span>OpenCV · Hand landmarks · Real-time interaction</span><span>↗</span></a>
+        <a href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer" class="archive-row reveal"><span>RAG &amp; Deep RL Implementations</span><span>Chroma · FAISS · DQN · A3C · PPO</span><span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let’s build something intelligent and useful.</h2>
+        <p>I’m currently open to research opportunities, internships, and part-time roles in AI engineering, machine learning, NLP, and applied AI. I’m especially interested in teams where I can contribute to real systems while continuing to deepen my research and engineering skills.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:temka4705@gmail.com">Email me</a>
+          <a class="button button-ghost" href="https://github.com/Riseikou1" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/temuujin-gerelt-och-69b455334/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Designed and built by Gerelt-Och Temuujin.</p>
+    <p>Powered by curiosity and an unreasonable number of checkpoints.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
