@@ -42,9 +42,9 @@ export default function Home() {
         <div className="hero-actions"><a className="button button-dark" href="#work">Explore my work <span>↘</span></a><Link className="text-link" href="/contact">Get in touch <span>↗</span></Link></div>
         <div className="hero-foot"><span>OPEN TO COLLABORATION</span><span>SCROLL TO EXPLORE ↓</span></div>
       </div>
-      <div className="hero-visual" aria-label="Portrait of Temuujin Gerelt-Och">
+      <div className="hero-visual" aria-label="Temuujin Gerelt-Och working on a laptop">
         <div className="visual-grid" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
-        <div className="portrait-frame"><img src="/portrait.jpg" alt="Temuujin Gerelt-Och" /></div>
+        <div className="portrait-frame"><img src="/portrait-new.png" alt="Temuujin Gerelt-Och working on a laptop" /></div>
         <div className="visual-label top-label">HELLO, I&apos;M<br /><strong>TEMUUJIN.</strong></div>
         <div className="visual-label bottom-label"><span className="asterisk">✳</span> BUILDING WHAT&apos;S NEXT</div>
         <div className="visual-coordinate">37°36&apos; N &nbsp; 127°00&apos; E</div>
