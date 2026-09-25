@@ -12,7 +12,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    icons: { icon: "/favicon.png", shortcut: "/favicon.png" },
+    icons: {
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      ],
+      shortcut: "/favicon.png",
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
+    manifest: "/site.webmanifest",
     openGraph: { title, description, type: "website", images: [{ url: image, width: 1200, height: 630, alt: "Temuujin Gerelt-Och portfolio" }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
