@@ -20,3 +20,13 @@
 .visual-coordinate{color:#fff;text-shadow:0 1px 8px #0008}
 .bottom-label{bottom:34px;right:34px}
 @media(max-width:620px){.portrait-frame{top:10px;right:10px;bottom:10px;left:10px;width:auto;height:auto}.top-label{top:28px;left:28px}.bottom-label{bottom:28px;right:28px}}
+/* Deep learning systems feature */
+.skill-grid>div.skill-optimize{grid-column:1/-1;display:grid;grid-template-columns:minmax(230px,.7fr) 1.3fr;grid-template-areas:"eyebrow tags" "heading tags" "copy tags";column-gap:52px;align-items:start;min-height:0;margin-top:26px;padding:30px 36px;background:#e9f5d4;border:1px solid #cfdfb7;position:relative;overflow:hidden}
+.skill-optimize::before{content:"";position:absolute;width:250px;height:250px;border:1px solid #bfd69b;border-radius:50%;right:-85px;top:-140px;pointer-events:none}
+.skill-optimize>span{grid-area:eyebrow;color:#4f7252!important}
+.skill-grid .skill-optimize h3{grid-area:heading;margin:17px 0 8px;font-size:37px}
+.skill-optimize h3 b{font-size:23px;color:#71934c;font-weight:400}
+.skill-grid .skill-optimize p{grid-area:copy;max-width:360px;margin:0}
+.optimization-tags{grid-area:tags;display:flex;flex-wrap:wrap;gap:10px;align-self:center;position:relative;z-index:1}
+.skill-grid .optimization-tags span{padding:11px 14px;border:1px solid #b6cda2;border-radius:2px;background:#f7fbec;color:#25492d;font-size:12px;font-weight:700;letter-spacing:0;white-space:nowrap}
+@media(max-width:760px){.skill-grid>div.skill-optimize{grid-template-columns:1fr;grid-template-areas:"eyebrow" "heading" "copy" "tags";gap:0;padding:26px;margin-top:18px}.skill-grid .skill-optimize p{max-width:540px;margin-bottom:23px}.skill-grid .optimization-tags span{font-size:11px;padding:9px 11px}}
