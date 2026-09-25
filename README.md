@@ -4,7 +4,7 @@ Personal portfolio built with vinext. It presents selected AI projects, backgrou
 
 ## Local development
 
-Use Node.js 22.13 or newer.
+The development commands automatically use Node.js 22, including on machines where an older Node version is the default.
 
 ```bash
 npm install
