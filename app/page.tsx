@@ -33,7 +33,7 @@ export default function Home() {
   const visibleProjects = projects.filter(project => category === "All" || project.kind === category);
   return <main>
     <header className="site-header wrap">
-      <Link className="wordmark" href="/" aria-label="Temuujin home"><span className="mark-wrap"><span className="mark">T</span><span className="mark-dot" /></span><span>TEMUUJIN<br /><small>GERELT-OCH</small></span></Link>
+      <Link className="wordmark" href="/" aria-label="Temuujin home"><img className="site-logo" src="/logo.png" alt="" width="42" height="42" /><span>TEMUUJIN<br /><small>GERELT-OCH</small></span></Link>
       <nav className={menuOpen ? "nav-open" : ""} aria-label="Main navigation"><a href="#work" onClick={() => setMenuOpen(false)}>Work</a><a href="#about" onClick={() => setMenuOpen(false)}>About</a><a href="#credentials" onClick={() => setMenuOpen(false)}>Credentials</a></nav>
       <div className="header-right"><ThemeToggle /><button className="menu-toggle" type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "✕" : "☰"}</button><a className="nav-contact" href="/contact">Let&apos;s talk <span>↗</span></a></div>
     </header>

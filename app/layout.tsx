@@ -15,13 +15,14 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     icons: {
       icon: [
-        { url: "/icon.svg?v=2", type: "image/svg+xml" },
-        { url: "/favicon.png?v=2", sizes: "32x32", type: "image/png" },
+        { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+        { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
       ],
-      shortcut: "/favicon.png?v=2",
-      apple: [{ url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
+      shortcut: "/favicon.ico",
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
-    manifest: "/site.webmanifest",
+    manifest: "/site-manifest.json",
     openGraph: { title, description, type: "website", images: [{ url: image, width: 1200, height: 630, alt: "Temuujin Gerelt-Och portfolio" }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
