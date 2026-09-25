@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
+import { ThemeProvider } from "../components/theme-provider";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -14,11 +15,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     icons: {
       icon: [
-        { url: "/icon.svg", type: "image/svg+xml" },
-        { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+        { url: "/icon.svg?v=2", type: "image/svg+xml" },
+        { url: "/favicon.png?v=2", sizes: "32x32", type: "image/png" },
       ],
-      shortcut: "/favicon.png",
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+      shortcut: "/favicon.png?v=2",
+      apple: [{ url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
     },
     manifest: "/site.webmanifest",
     openGraph: { title, description, type: "website", images: [{ url: image, width: 1200, height: 630, alt: "Temuujin Gerelt-Och portfolio" }] },
@@ -27,5 +28,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><head><meta name="theme-color" content="#f5f5ef" /></head><body><ThemeProvider>{children}</ThemeProvider></body></html>;
 }
