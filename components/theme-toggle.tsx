@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "./theme-provider";
+import { MoonIcon, SunIcon } from "./ui-icons";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
@@ -16,9 +17,9 @@ export default function ThemeToggle() {
       title={`Switch to ${isDark ? "light" : "dark"} mode`}
       onClick={toggleTheme}
     >
-      <span className="theme-icon theme-sun" aria-hidden="true">✳</span>
-      <span className="theme-icon theme-moon" aria-hidden="true">◒</span>
-      <span className="theme-thumb" aria-hidden="true"><span /></span>
+      <span className="theme-track-icon theme-track-sun"><SunIcon /></span>
+      <span className="theme-track-icon theme-track-moon"><MoonIcon /></span>
+      <span className="theme-thumb"><SunIcon className="theme-thumb-sun" /><MoonIcon className="theme-thumb-moon" /></span>
     </button>
   );
 }
